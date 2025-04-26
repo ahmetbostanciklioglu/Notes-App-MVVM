@@ -5,4 +5,16 @@
 //  Created by Ahmet Bostanci on 27.04.2025.
 //
 
-import Foundation
+import SwiftUI
+
+@Observable
+class NoteViewModel {
+    
+    var notes: [Note] = []
+    
+    
+    var text: String = ""
+    var selectedColor: Color = .cyan
+    
+    
+}

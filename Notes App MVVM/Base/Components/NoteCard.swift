@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct NoteCard: View {
+    let note: Note
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.yellow
+                .ignoresSafeArea()
+            
+            Text(note.text)
+        }
+        
     }
 }
 
 #Preview {
-    NoteCard()
+    NoteCard(note: DeveloperPreview.instance.notes[0])
 }
